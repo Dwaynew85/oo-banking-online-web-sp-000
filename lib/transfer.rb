@@ -12,11 +12,6 @@ class Transfer
     sender.valid? && receiver.valid?
   end
 
-  def execute_transaction
-    if sender.balance > amount
-      sender.balance -=
-      receiver.deposit(amount)
-    end
-  end
-
 end
+
+car_loan = Transfer(brad, devin, 100)
