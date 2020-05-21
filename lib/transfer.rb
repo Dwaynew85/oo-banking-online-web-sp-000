@@ -15,4 +15,4 @@ class Transfer
 
 end
 
-car_loan = Transfer(brad, devin, 100)
+# car_loan = Transfer(brad, devin, 100)
