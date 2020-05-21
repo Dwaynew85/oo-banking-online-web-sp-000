@@ -20,6 +20,7 @@ class Transfer
     else
       "#{sender} doesn't have enough funds"
       status = "incomplete"
+    end
   end
 
 end
