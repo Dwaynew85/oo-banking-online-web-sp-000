@@ -18,8 +18,7 @@ class Transfer
       receiver.deposit(amount)
       self.status = "complete"
     else
-      "#{sender} doesn't have enough funds"
-      status = "incomplete"
+      "Transaction rejected. Please check your account balance"
     end
   end
 
