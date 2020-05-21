@@ -16,6 +16,7 @@ class Transfer
     if sender.balance > amount
       sender.balance -=
       receiver.deposit(amount)
+    end
   end
 
 end
