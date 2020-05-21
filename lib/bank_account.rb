@@ -26,5 +26,5 @@ class BankAccount
 
 end
 
-brad = BankAccount.new("Bradley")
-devin = BankAccount.new("Devinson")
+# brad = BankAccount.new("Bradley")
+# devin = BankAccount.new("Devinson")
