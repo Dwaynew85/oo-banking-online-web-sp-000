@@ -16,7 +16,7 @@ class Transfer
     if valid? && sender.balance > amount && self.status == "pending"
       sender.balance -= amount
       receiver.deposit(amount)
-      status = "complete"
+      self.status = "complete"
     else
       "#{sender} doesn't have enough funds"
       status = "incomplete"
