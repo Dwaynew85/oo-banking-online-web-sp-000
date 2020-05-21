@@ -12,7 +12,7 @@ class Transfer
     sender.valid? && receiver.valid?
   end
 
-  def transfer 
+  def transfer
     if sender.balance > amount
       sender.balance -= amount
       receiver.deposit(amount)
