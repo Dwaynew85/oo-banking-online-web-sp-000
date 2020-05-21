@@ -12,6 +12,16 @@ class Transfer
     sender.valid? && receiver.valid?
   end
 
+  def transfer 
+    if sender.balance > amount
+      sender.balance -= amount
+      receiver.deposit(amount)
+      status = "complete"
+    else
+      "#{sender} doesn't have enough funds"
+      status = "incomplete"
+  end
+
 end
 
 # car_loan = Transfer(brad, devin, 100)
