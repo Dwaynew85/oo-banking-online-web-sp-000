@@ -1,4 +1,3 @@
-require './lib/bank_account.rb'
 class Transfer
   attr_accessor :sender, :receiver, :status, :amount
 
