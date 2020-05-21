@@ -13,8 +13,9 @@ class Transfer
   end
 
   def execute_transaction
-    sender.balance -= amount
-    receiver.deposit(amount)
+    if sender.balance > amount 
+      sender.balance -=
+      receiver.deposit(amount)
   end
 
 end
